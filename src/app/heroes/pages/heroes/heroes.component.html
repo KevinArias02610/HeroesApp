@@ -12,7 +12,7 @@
                     <mat-card-title></mat-card-title>
                     <mat-card-subtitle></mat-card-subtitle>
                 </mat-card-header>
-                <img mat-card-image [src]="heroe | imagenPipe" alt="">
+                <img class="example-button" mat-card-image [src]="heroe | imagenPipe" alt="">
             </mat-card> 
         </div>
         <div fxFlex="50">
@@ -27,12 +27,17 @@
                   <p><b>Editorial:</b> {{heroe.publisher}}</p>
                   <p><b>Alter Ego:</b> {{heroe.alter_ego}}</p>
                 </mat-card-content>
-                <mat-card-actions>
-                    <span class="spacer"></span>
-                    <button mat-button color="warn" (click)="regresar()">
-                        <mat-icon>undo</mat-icon>Regresar
+                <mat-divider></mat-divider>
+                <br>
+                <div fxLayout>
+                    <button mat-raised-button color="warn" (click)="regresar()">
+                        <mat-icon>remove_red_eye</mat-icon>Ver listado
                     </button>
-                </mat-card-actions>
+                    <span class="spacer"></span>
+                    <button mat-raised-button color="primary" (click)="editar()">
+                        <mat-icon>edit</mat-icon>Editar
+                    </button>
+                </div>
               </mat-card>
             <br>
         </div>

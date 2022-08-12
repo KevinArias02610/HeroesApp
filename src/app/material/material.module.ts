@@ -11,6 +11,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   exports: [
@@ -24,7 +28,11 @@ import { MatInputModule } from '@angular/material/input';
     MatGridListModule, 
     MatAutocompleteModule,
     MatFormFieldModule,
-    MatInputModule
+    MatSelectModule,
+    MatInputModule, 
+    MatSnackBarModule,
+    MatDialogModule,
+    MatTooltipModule
   ]
 })
 export class MaterialModule { }

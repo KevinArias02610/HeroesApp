@@ -9,3 +9,12 @@ img {
   mat-card-header{
     align-items: center;
   }
+
+  .example-tooltip-red {
+    background: #b71c1c;
+  }
+
+  .example-button {
+    margin-top: 16px;
+  }
+  

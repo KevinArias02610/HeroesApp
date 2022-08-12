@@ -29,4 +29,8 @@ export class HeroesComponent implements OnInit {
     this.router.navigate(['./heroes/listado'])
   }
 
+  editar(){
+    this.router.navigate(['./heroes/editar', this.heroe.id])
+  }
+
 }
